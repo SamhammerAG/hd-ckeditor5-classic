@@ -1,0 +1,83 @@
+{
+  "name": "@samhammer/hd-ckeditor5-classic",
+  "version": "25.0.0",
+  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "keywords": [
+    "ckeditor5-build",
+    "ckeditor",
+    "ckeditor5",
+    "ckeditor 5",
+    "wysiwyg",
+    "rich text",
+    "editor",
+    "html",
+    "contentEditable",
+    "editing",
+    "operational transformation",
+    "ot",
+    "collaboration",
+    "collaborative",
+    "real-time",
+    "framework"
+  ],
+  "main": "./build/ckeditor.js",
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@ckeditor/ckeditor5-adapter-ckfinder": "^25.0.0",
+    "@ckeditor/ckeditor5-alignment": "^25.0.0",
+    "@ckeditor/ckeditor5-basic-styles": "^25.0.0",
+    "@ckeditor/ckeditor5-block-quote": "^25.0.0",
+    "@ckeditor/ckeditor5-ckfinder": "^25.0.0",
+    "@ckeditor/ckeditor5-core": "^25.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^24.1.0",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^24.1.0",
+    "@ckeditor/ckeditor5-easy-image": "^25.0.0",
+    "@ckeditor/ckeditor5-editor-classic": "^25.0.0",
+    "@ckeditor/ckeditor5-essentials": "^25.0.0",
+    "@ckeditor/ckeditor5-font": "^25.0.0",
+    "@ckeditor/ckeditor5-heading": "^25.0.0",
+    "@ckeditor/ckeditor5-image": "^25.0.0",
+    "@ckeditor/ckeditor5-indent": "^25.0.0",
+    "@ckeditor/ckeditor5-link": "^25.0.0",
+    "@ckeditor/ckeditor5-list": "^25.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^25.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^25.0.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^25.0.0",
+    "@ckeditor/ckeditor5-remove-format": "^25.0.0",
+    "@ckeditor/ckeditor5-table": "^25.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^25.0.0",
+    "@ckeditor/ckeditor5-ui": "^25.0.0",
+    "@ckeditor/ckeditor5-upload": "^25.0.0",
+    "@ckeditor/ckeditor5-utils": "^25.0.0",
+    "@samhammer/ckeditor5-simple-button-plugin": "~2.12.0",
+    "@samhammer/ckeditor5-simple-image-upload-plugin": "~3.12.0",
+    "css-loader": "~5.0.2",
+    "eslint": "^7.13.0",
+    "eslint-config-ckeditor5": "^3.1.0",
+    "mini-css-extract-plugin": "~1.3.6",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^4.0.1",
+    "terser-webpack-plugin": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=5.7.1"
+  },
+  "author": "CKSource (http://cksource.com/), SamhammerAG (https://www.samhammer.de/)",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://ckeditor.com/ckeditor-5",
+  "bugs": "https://github.com/SamhammerAG/hd-ckeditor5-classic/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamhammerAG/hd-ckeditor5-classic"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/ && git commit -m 'Internal: Build.'; fi"
+  }
+}
