@@ -1,5 +1,5 @@
 {
-  "name": "@samhammer/hd-ckeditor5-classic",
+  "name": "@samhammer/hd-ckeditor5-build-classic",
   "version": "25.0.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
