@@ -17,19 +17,15 @@ const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 module.exports = {
 	devtool: 'source-map',
 	performance: { hints: false },
-
 	entry: path.resolve( __dirname, 'src', 'ckeditor.js' ),
-
 	output: {
 		// The name under which the editor will be exported.
 		library: 'ClassicEditor',
-
 		path: path.resolve( __dirname, 'build' ),
 		filename: 'ckeditor.js',
 		libraryTarget: 'umd',
 		libraryExport: 'default'
 	},
-
 	optimization: {
 		minimizer: [
 			new TerserPlugin( {
@@ -44,7 +40,6 @@ module.exports = {
 			} )
 		]
 	},
-
 	plugins: [
 		new CKEditorWebpackPlugin( {
 			// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
@@ -60,7 +55,6 @@ module.exports = {
 			filename: 'ckeditor.css'
 		} )
 	],
-
 	module: {
 		rules: [
 			{
