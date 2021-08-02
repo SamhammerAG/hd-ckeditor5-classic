@@ -113,13 +113,15 @@
 				addTargetToExternalLinks: true
 			},
 			image: {
-				styles: [
-					'full',
-					'alignLeft',
-					'alignRight'
-				],
+				styles: {
+					options: [
+						'block',
+						'alignLeft',
+						'alignRight'
+					]
+				},
 				toolbar: [
-					'imageStyle:full',
+					'imageStyle:block',
 					'imageStyle:alignLeft',
 					'imageStyle:alignRight'
 				]
@@ -138,7 +140,7 @@
 					icon: '',
 					onclick: () => console.log('streaming call button clicked')
 				}
-			],
+			]
 		};
 
 		ClassicEditor
