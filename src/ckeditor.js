@@ -21,12 +21,12 @@ import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
-import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import ImageBlock from '@ckeditor/ckeditor5-image/src/imageblock';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -37,7 +37,7 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	TableToolbar,
 	SimpleUploadImagePlugin,
-	Image,
+	ImageBlock,
 	ImageToolbar,
 	ImageStyle,
 
