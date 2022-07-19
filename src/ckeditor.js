@@ -15,8 +15,6 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
-import SimpleUploadImagePlugin from '@samhammer/ckeditor5-simple-image-upload-plugin/src/simple-upload-image-plugin';
-import SimpleButton from '@samhammer/ckeditor5-simple-button-plugin/src/simple-button-plugin';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
@@ -29,6 +27,8 @@ import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperti
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import ImageBlock from '@ckeditor/ckeditor5-image/src/imageblock';
+import SimpleUploadImagePlugin from '@samhammer/ckeditor5-simple-image-upload-plugin/src/simple-upload-image-plugin';
+import SimpleButton from '@samhammer/ckeditor5-simple-button-plugin/src/simple-button-plugin';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -38,11 +38,9 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	TableToolbar,
-	SimpleUploadImagePlugin,
 	ImageBlock,
 	ImageToolbar,
 	ImageStyle,
-
 	Bold,
 	Italic,
 	Underline,
@@ -57,5 +55,7 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableProperties,
 	TableCellProperties,
+
+	SimpleUploadImagePlugin,
 	SimpleButton
 ];
