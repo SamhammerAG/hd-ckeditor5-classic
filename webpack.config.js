@@ -56,7 +56,9 @@
 			 banner: bundler.getLicenseBanner(),
 			 raw: true
 		 } ),
-		 new MiniCssExtractPlugin()
+		 new MiniCssExtractPlugin({
+			filename: "ckeditor.css"
+		 })
 	 ],
 
 	 module: {
